@@ -20,9 +20,9 @@ int main(void)
 			{
 				putchar(c);
 			}
+			break;
 		}
 	}
 	putchar('\n');
-	break;
 	return (0);
 }
