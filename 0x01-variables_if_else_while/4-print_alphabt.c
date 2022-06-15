@@ -13,10 +13,9 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; ++c)
 	{
-		putchar(c);
-		if (c == 'e' || c == 'f')
+		if (c != 'e' || c != 'f')
 		{
-			continue;
+			putchar(c);
 		}
 	}
 	putchar('\n');
