@@ -11,13 +11,16 @@ int main(void)
 {
 	char c;
 
-	for (c='a'; c<'z'; ++c)
+	for (c='a'; c<='z'; ++c)
 	{
-		while (c != 'z')
+		putchar(c);
+		if (c == 'z')
 		{
-			putchar(c);
+			for (c='A'; c<='Z'; ++c)
+			{
+				putchar(c)
+			}
 		}
-		putchar(toupper(c));
 	}
 	putchar('\n');
 	return (0);
