@@ -3,8 +3,8 @@
 #include <ctype.h>
 #include "main.h"
 /**
- *
  * main - print string
+ *
  *
  * Return: 0(success)
  */
