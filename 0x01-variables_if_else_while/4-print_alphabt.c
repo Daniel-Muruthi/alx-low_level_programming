@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
+ * main - Entry Point
  *
  *
- *
- *
+ * Return: 0(success)
  */
 int main(void)
 {
@@ -13,7 +13,11 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; ++c)
 	{
-		if (c != 'e' || c != 'f')
+		if (c == 'e' || c == 'f')
+		{
+			continue;
+		}
+		else
 		{
 			putchar(c);
 		}
