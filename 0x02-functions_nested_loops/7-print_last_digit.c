@@ -12,7 +12,7 @@
  */
 int print_last_digit(int i)
 {
-	int lastdigit = n % 10;
+	int lastdigit = i % 10;
 
 	return (lastdigit);
 }
