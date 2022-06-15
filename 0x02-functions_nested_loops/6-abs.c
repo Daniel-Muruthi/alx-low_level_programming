@@ -13,6 +13,6 @@
 int _abs(int r)
 {
 	r = abs(r);
-	_putchar(r);
+	printf("%d\n", r);
 	return (0);
 }
