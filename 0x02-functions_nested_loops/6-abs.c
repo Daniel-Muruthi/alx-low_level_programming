@@ -12,6 +12,7 @@
  */
 int _abs(int r)
 {
-	int abs(int r);
+	r = abs(r);
+	_putchar(r);
 	return (0);
 }
