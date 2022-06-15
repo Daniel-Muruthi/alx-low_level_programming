@@ -13,10 +13,11 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; ++c)
 	{
-		while (c != 'e' || c != 'f')
+		if (c == 'e' || c == 'f')
 		{
-			putchar(c);
+			continue;
 		}
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
