@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * print_last_digit(int) - prints last digit of a number
+ * print_last_digit - prints last digit of a number
  *
  * @i: The value being tested
  *
