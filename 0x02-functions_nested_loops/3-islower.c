@@ -12,7 +12,7 @@
  */
 int _islower(int c)
 {
-	char d = islower(c);
+	int d = islower(c);
 
 	if (d)
 	{
