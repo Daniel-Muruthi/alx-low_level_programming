@@ -7,7 +7,13 @@
  */
 int main(void)
 {
-	putchar('_putchar');
+	int i;
+	char word = "_putchar";
+
+	for (i = 0; i <= strlen(word); i++)
+	{
+		putchar(word[i]);
+	}
 	putchar('\n');
 	return (0);
 
