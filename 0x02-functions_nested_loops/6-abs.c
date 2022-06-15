@@ -5,7 +5,7 @@
 /**
  * _abs - computes the absolute value of an integer
  *
- *
+ * @r: - value being used
  *
  * Return: 0(success)
  *
