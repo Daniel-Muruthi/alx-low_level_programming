@@ -13,6 +13,5 @@
 int _abs(int r)
 {
 	r = abs(r);
-	printf("%d\n", r);
 	return (r);
 }
