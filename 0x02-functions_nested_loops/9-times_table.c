@@ -24,11 +24,11 @@ void times_table(void)
 			{
 				printf(",");
 			}
-			if (x < 10)
+			if (x < 8)
 			{
 				printf("  ");
 			}
-			else if (x > 9 && i < 9 && j < 9)
+			else if (x > 7 && i < 9 && j < 9)
 			{
 				printf(" ");
 			}
