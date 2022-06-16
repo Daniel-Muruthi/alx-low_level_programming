@@ -3,10 +3,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * times_table - Prints the 9 times table.
+ * Print square - Prints a square
  *
- *
- *
+ * @size: parameter
  * Return: void(success)
  *
  */
