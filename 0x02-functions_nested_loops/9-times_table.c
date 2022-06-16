@@ -27,7 +27,7 @@ void times_table(void)
 				{
 					printf(" ");
 				}
-				_putchar(n + '0');
+				_putchar(x + '0');
 
 				if (j == 9)
 				{
@@ -45,7 +45,7 @@ void times_table(void)
 				{
 					continue;
 				}
-				_putchar(', ');
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
