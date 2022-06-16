@@ -5,8 +5,8 @@
 /**
  * add- adds two integers and returns the result
  *
- *
- *
+ * @i: parameter
+ * @j: parameter
  * Return: 0(success)
  *
  */
