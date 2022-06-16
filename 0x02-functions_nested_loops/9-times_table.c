@@ -12,39 +12,31 @@
  */
 void times_table(void)
 {
-	int i, j, x;
+	int i, j, n;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			x = i * j;
+			n = i * j;
 
-			if (x % 10 == 0)
+			if ((n / 10) == 0)
 			{
-				printf("%d", x);
 				if (j != 0)
-				{
-					printf(" ");
-				}
-				_putchar(x + '0');
+					_putchar(' ');
+				_putchar(n + '0');
 
 				if (j == 9)
-				{
 					continue;
-				}
 				_putchar(',');
 				_putchar(' ');
 			}
 			else
 			{
-				_putchar((x / 10) + '0');
-				_putchar((x % 10) + '0');
-
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
 				if (j == 9)
-				{
 					continue;
-				}
 				_putchar(',');
 				_putchar(' ');
 			}
@@ -52,3 +44,4 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
+
