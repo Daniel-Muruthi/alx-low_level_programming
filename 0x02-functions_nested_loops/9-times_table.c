@@ -12,7 +12,7 @@
  */
 void times_table(void)
 {
-	int i, j, x;
+	int i, j[10], x;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -21,7 +21,7 @@ void times_table(void)
 		{
 			x = i * j;
 			printf("%d", x);
-			if (j != 9)
+			if (!j[10])
 			{
 				printf(", ");
 			}
