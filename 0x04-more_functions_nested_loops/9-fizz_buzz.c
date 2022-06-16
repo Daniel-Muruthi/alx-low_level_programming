@@ -21,23 +21,24 @@ int fizzbuzz(void)
 	{
 		if (i % 3 == 0)
 		{
-			_putchar(a);
-			_putchar(' ');
+			printf("%s", a);
 		}
 		else if (i % 5 == 0)
 		{
-			_putchar(b);
-			_putchar(' ');
+			printf("%s", b);
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar(c);
-			_putchar(' ');
+			printf("%s", c);
 		}
 		else
 		{
 			printf("%d", i);
 		}
+		
+		if (i != 100)
+		{
+			printf(" ");
 	}
 	return (0);
 }
