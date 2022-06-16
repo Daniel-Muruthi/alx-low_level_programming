@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
+ * fizzbuzz - fizzbuzz challenge
  *
  *
- *
- *
+ * Return: 0
  *
  */
 int fizzbuzz(void)
@@ -36,4 +36,5 @@ int fizzbuzz(void)
 			printf("%d", i);
 		}
 	}
+	return (0);
 }
