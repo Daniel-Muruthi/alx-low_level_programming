@@ -1,14 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
 
 /**
- * main - function prints out the fizzbuzz challenge
+ * main - prints the numbers from 1 to 100, as per the fizzbuzz challenge
  * 
- * Return: (0)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
@@ -17,23 +14,22 @@ int main(void)
 	{
 		if (i % 3 == 0)
 		{
-			printf("Fizz");
-		}
-		if (i % 5 == 0)
+			printf(" Fizz");
+		} 
+		else if (i % 5 == 0)
 		{
-			printf("Buzz");
-		}
-		if (i % 3 == 0 && i % 5 == 0)
+			printf(" Buzz");
+		} 
+		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz");
-		}
+			printf(" FizzBuzz");
+		} 
 		else
 		{
-			printf("%d", i);
+			printf(" %d", i);
 		}
-		if (i != 100)
-		{
-			printf(" ");
 	}
+	printf("\n");
+
 	return (0);
 }
