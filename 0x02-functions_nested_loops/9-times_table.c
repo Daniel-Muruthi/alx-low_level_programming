@@ -24,6 +24,10 @@ void times_table(void)
 			{
 				printf(", ");
 			}
+			if (x < 10)
+			{
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}
