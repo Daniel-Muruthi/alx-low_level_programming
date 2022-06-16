@@ -24,7 +24,7 @@ void times_table(void)
 			{
 				printf(", ");
 			}
-			if (x < 7)
+			if (x < 6)
 			{
 				printf(" ");
 			}
