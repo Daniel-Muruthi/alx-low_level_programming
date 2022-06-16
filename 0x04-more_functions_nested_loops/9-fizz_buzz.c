@@ -4,12 +4,11 @@
 #include <ctype.h>
 
 /**
- * main - fizzbuzz challenge
- *
- *
- * Return: 0
- *
+ * main - function prints out the fizzbuzz challenge
+ * 
+ * Return: (0)
  */
+
 int main(void)
 {
 	int i;
