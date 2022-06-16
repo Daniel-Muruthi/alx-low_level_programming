@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 /**
- * print_line - function prints straight line
+ * print_diagonal - function prints diagonal line
  * @n: argument
  * Return: void/none
  */
