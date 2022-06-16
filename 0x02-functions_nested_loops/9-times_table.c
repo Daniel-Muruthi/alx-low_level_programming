@@ -29,7 +29,7 @@ void times_table(void)
 				printf(", ");
 				if (x <= 9 && i <= 9 && j < 9)
 				{
-					_putchar(' ');
+					printf(" ");
 				}
 			}
 		}
