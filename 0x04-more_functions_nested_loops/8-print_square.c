@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * Print square - Prints a square
+ * print_square - Prints a square
  *
  * @size: parameter
  * Return: void(success)
