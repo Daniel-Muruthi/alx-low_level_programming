@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * times_table - Prints the 9 times table
+ * times_table - Prints the 9 times table.
  *
  *
  *
@@ -24,11 +24,11 @@ void times_table(void)
 			{
 				printf(",");
 			}
-			if (x < 10 && i != 9 && j != 9)
+			if (x < 10 && i < 9 && j < 9)
 			{
 				printf("  ");
 			}
-			else if (x > 10 && i != 9 && j != 9)
+			else if (x > 9 && i < 9 && j < 9)
 			{
 				printf(" ");
 			}
