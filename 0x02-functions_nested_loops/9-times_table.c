@@ -7,7 +7,7 @@
  *
  *
  *
- * Return: void
+ * Return: void(success)
  *
  */
 void times_table(void)
@@ -16,6 +16,7 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
+		printf("%d\n", i)
 		for (j = 0; j <= 9; j++)
 		{
 			x = i * j;
@@ -26,5 +27,4 @@ void times_table(void)
 			}
 		}
 	}
-	printf("\n");
 }
