@@ -24,14 +24,13 @@ void times_table(void)
 			{
 				printf(",");
 			}
-			if (x < 10)
+			if (x < 10 && i != 9 && j != 9)
 			{
-				_putchar(' ');
-				_putchar(' ');
+				printf("  ");
 			}
-			else if (x > 9)
+			else if (x > 9 && i != 9 && j !=9)
 			{
-				_putchar(' ');
+				printf(" ");
 			}
 		}
 		printf("\n");
