@@ -26,7 +26,7 @@ void times_table(void)
 			}
 			if (x < 10)
 			{
-				printf("   ");
+				printf("  ");
 			}
 			else if (x > 9)
 			{
