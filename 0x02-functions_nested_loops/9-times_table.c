@@ -25,7 +25,10 @@ void times_table(void)
 			{
 				printf(", ");
 			}
+			else
+			{
+				break;
+			}
 		}
 	}
-	break;
 }
