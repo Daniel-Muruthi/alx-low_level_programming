@@ -24,6 +24,10 @@ void times_table(void)
 			{
 				printf(", ");
 			}
+			else if (j == 9)
+			{
+				break;
+			}
 		}
 		printf("%d\n", i);
 	}
