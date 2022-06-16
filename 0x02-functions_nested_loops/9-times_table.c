@@ -19,20 +19,36 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			x = i * j;
-			printf("%d", x);
-			if (j == 9)
+
+			if (x % 10 == 0)
 			{
-				continue;
-			}
-			else
-			{
-				printf(", ");
-				if (x < 8 && i < 9 && j < 9)
+				printf("%d", x);
+				if (j != 0)
 				{
 					printf(" ");
 				}
+				_putchar(n + '0');
+
+				if (j == 9)
+				{
+					continue;
+				}
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar((x / 10) + '0');
+				_putchar((x % 10) + '0');
+
+				if (j == 9)
+				{
+					continue;
+				}
+				_putchar(', ');
+				_putchar(' ');
 			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
