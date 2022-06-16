@@ -26,11 +26,12 @@ void times_table(void)
 			}
 			if (x < 10)
 			{
-				printf("  ");
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (x > 9)
 			{
-				printf(" ");
+				_putchar(' ');
 			}
 		}
 		printf("\n");
