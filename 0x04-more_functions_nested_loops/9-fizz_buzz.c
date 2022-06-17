@@ -2,38 +2,27 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100, as per the fizzbuzz challenge
- * 
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Return: Always (0)
  */
 int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i < 100 ; i++)
 	{
-		if (i % 3 == 0)
-		{
-			printf(" Fizz");
-		} 
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
 		else if (i % 5 == 0)
-		{
-			printf(" Buzz");
-		} 
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf(" FizzBuzz");
-		} 
+			printf("Buzz");
 		else
-		{
-			printf(" %d", i);
-		}
-		while (i < 100)
-		{
-			printf(" ");
-		}
+			printf("%d", i);
+
+		if (i != 100)
+			print(" ");
 	}
-	printf("\n");
 
 	return (0);
 }
