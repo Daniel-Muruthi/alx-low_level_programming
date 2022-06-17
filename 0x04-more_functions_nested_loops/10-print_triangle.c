@@ -4,8 +4,8 @@
 #include <ctype.h>
 
 /**
- * print_line - function prints straight line
- * @n: argument
+ * print_triangle - function prints out triangles
+ * @size: argument
  * Return: void/none
  */
 void print_triangle(int size)

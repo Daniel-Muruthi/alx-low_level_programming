@@ -5,7 +5,7 @@
 
 /**
  * main - function prints out the fizzbuzz challenge
- * 
+ *
  * Return: (0)
  */
 
