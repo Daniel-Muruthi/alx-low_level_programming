@@ -21,9 +21,9 @@ int main(void)
 				}
 				else
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
+					putchar((i % 10) + '0');
+					putchar((j % 10) + '0');
+					putchar((k % 10) + '0');
 					if (i == 8 && j == 9 && k == 9)
 					{
 						break;
