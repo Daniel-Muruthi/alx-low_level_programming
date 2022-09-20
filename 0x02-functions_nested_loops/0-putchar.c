@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  * Description - Prints a string followed by a new line
@@ -8,8 +9,9 @@ int main(void)
 {
 	int i;
 	char c[8] = "_putchar";
+	int j = sizeof(c);
 
-	for (i = 0; i <= (sizeof(c)); i++)
+	for (i = 0; i <= j; i++)
 	{
 		putchar(c + 'a');
 	}
