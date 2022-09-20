@@ -6,6 +6,13 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+	char c[8] = "_putchar";
+
+	for (i = 0; i <= (sizeof(c)); i++)
+	{
+		putchar(c + 'a');
+	}
+	putchar('\n');
 	return (0);
 }
