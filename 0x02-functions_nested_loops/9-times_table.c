@@ -12,22 +12,21 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			product = i * j;
-			if (product <= 9 && i < 9)
+			product = (i * j);
+			if (product <= 9 && j < 10)
 			{
-				_putchar(product + '0');
+				_putchar(product);
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else if (product > 9 && i < 9)
+			else if (product > 9 && j < 10)
 			{
-				_putchar(product + '0');
+				_putchar(product);
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
-		_putchar('$');
 		_putchar('\n');
 	}
 }
