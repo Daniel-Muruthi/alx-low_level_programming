@@ -26,7 +26,7 @@ void print_times_table(int n)
 						continue;
 					printf(",  ");
 					if (i == 0 && j != n)
-						printf("  ");
+						printf(" ");
 				}
 				else
 				{
