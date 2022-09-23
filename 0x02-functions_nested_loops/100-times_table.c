@@ -33,7 +33,7 @@ void print_times_table(int n)
 					printf("%d", product);
 					if (j == n)
 						continue;
-					printf(",  ");
+					printf(", ");
 				}
 			}
 			printf("\n");
