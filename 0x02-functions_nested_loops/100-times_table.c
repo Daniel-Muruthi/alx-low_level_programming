@@ -20,7 +20,7 @@ void print_times_table(int n)
 				if ((product / 10) == 0)
 				{
 					if (product != 0)
-						printf(" ");
+						printf("");
 					printf("%d", product);
 					if (j == n)
 						continue;
@@ -33,7 +33,7 @@ void print_times_table(int n)
 					printf("%d", product);
 					if (j == n)
 						continue;
-					printf(", ");
+					printf(",  ");
 				}
 			}
 			printf("\n");
