@@ -24,16 +24,16 @@ void print_times_table(int n)
 					printf("%d", product);
 					if (j == n)
 						continue;
-					printf(", ");
+					printf(",  ");
 					if (i == 0 && j != n)
-						printf(" ");
+						printf("  ");
 				}
 				else
 				{
 					printf("%d", product);
 					if (j == n)
 						continue;
-					printf(", ");
+					printf(",  ");
 				}
 			}
 			printf("\n");
