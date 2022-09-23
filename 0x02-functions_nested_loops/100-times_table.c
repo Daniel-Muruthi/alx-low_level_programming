@@ -19,6 +19,8 @@ void print_times_table(int n)
 				product = (i * j);
 				if ((product / 10) == 0)
 				{
+					if (product != 0)
+						printf(" ");
 					printf("%d", product);
 					if (j == n)
 						continue;
@@ -31,7 +33,12 @@ void print_times_table(int n)
 					printf("%d", product);
 					if (j == n)
 						continue;
-					printf(",  ");
+					if (product > 99)
+					{
+						printf(", ");
+					}
+					else
+						printf(",  ");
 				}
 			}
 			printf("\n");
