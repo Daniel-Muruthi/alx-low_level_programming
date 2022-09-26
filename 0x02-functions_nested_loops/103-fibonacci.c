@@ -19,12 +19,11 @@ int main(void)
 		sum = i + j;
 		if (sum > limit)
 			break;
-		if (sum % 2 == 0)
-		{
+		if ((sum % 2) == 0)
 			count = count + sum;
-		}
+		i = j;
+		j = sum;
 	}
-	printf("%ld", sum);
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
