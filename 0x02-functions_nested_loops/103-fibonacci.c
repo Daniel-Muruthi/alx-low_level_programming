@@ -11,15 +11,15 @@ int main(void)
 
 	sum = 0;
 	limit = 4000000;
-	i = 1;
-	j = 2;
+	i = 0;
+	j = 1;
 	count = 0;
 	while (1)
 	{
 		sum = i + j;
 		if (sum > limit)
 			break;
-		if ((sum % 2) == 0 && sum < limit)
+		if ((sum % 2) == 0)
 			count = count + sum;
 		i = j;
 		j = sum;
