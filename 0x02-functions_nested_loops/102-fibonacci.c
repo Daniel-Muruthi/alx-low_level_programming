@@ -14,16 +14,15 @@ int main(void)
 		i = 1;
 		j = 2;
 		sum = 0;
-		printf("%d, %d, ", i, j); 
-		while (count > 1 && count <= 50)
+		while (count <= 50)
 		{
 			k = i + j;
 			sum = sum + k;
+			printf("%d, %d, %d", i, j, sum);
+			if (count == 50)
+				continue;
+			print(", ");
 		}
-		printf("%d", sum);
-		if (count == 50)
-			continue;
-		printf(", ");
 	}
 	printf("\n");
 	return (0);
