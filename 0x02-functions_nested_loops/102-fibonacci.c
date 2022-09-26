@@ -14,6 +14,7 @@ int main(void)
 		i = 1;
 		j = 2;
 		sum = 0;
+		printf("%d, %d, ", i, j); 
 		while (count > 1 && count <= 50)
 		{
 			k = i + j;
@@ -22,7 +23,7 @@ int main(void)
 		printf("%d", sum);
 		if (count == 50)
 			continue;
-		printf(", ")i
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
