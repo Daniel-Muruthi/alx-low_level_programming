@@ -21,7 +21,7 @@ int main(void)
 			printf("%d, %d, %d", i, j, sum);
 			if (count == 50)
 				continue;
-			print(", ");
+			printf(", ");
 		}
 	}
 	printf("\n");
