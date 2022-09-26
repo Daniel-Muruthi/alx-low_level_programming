@@ -17,15 +17,11 @@ int main(void)
 		i[count] = i[(count - 1)] + i[(count + 2)];
 		for (j = 0; j <= 50; j++)
 		{
-			if (i[j] % 2 == 0)
+			if (i[j] % 2 == 0 && i[j] < 4000000)
 			{
 				sum = sum + i[j];
-				if (i[j] !< 4000000)
-				{
-					printf("%ld", sum);
-					break;
-				}
 			}
+			printf("%ld", sum);
 		}
 	}
 	printf("\n");
