@@ -18,7 +18,7 @@ int main(void)
 		if (i[count] <= 4000000 && i[count] % 2 == 0)
 		{
 			sum = sum + i[count];
-			if (i[count) > 4000000)
+			if (i[count] > 4000000)
 			{
 				printf("%ld", sum);
 				break;
