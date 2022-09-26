@@ -7,16 +7,15 @@
  */
 int main(void)
 {
-	int count;
-	long int l[50];
+	long int l[50], count;
 
 	l[0] = 1;
 	l[1] = 2;
-	printf("%d, %d, ", l[0], l[1]);
+	printf("%ld, %ld, ", l[0], l[1]);
 	for (count = 2; count < 50; count++)
 	{
 		l[count] = l[(count - 1)] + l[(count - 2)];
-		printf("%d", l[count]);
+		printf("%ld", l[count]);
 		if (count == 49)
 			break;
 		printf(", ");
