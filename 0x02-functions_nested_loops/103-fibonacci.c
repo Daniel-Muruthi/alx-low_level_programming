@@ -23,8 +23,8 @@ int main(void)
 		else
 			break;
 		i = j;
-		j = sum;
+		j = count;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", count);
 	return (0);
 }
