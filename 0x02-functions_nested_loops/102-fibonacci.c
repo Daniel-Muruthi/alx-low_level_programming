@@ -14,7 +14,7 @@ int main(void)
 	l[0] = i;
 	l[1] = j;
 	printf("%d, %d, ", l[0], l[1]);
-	for (count = 2; count < 50; count++)
+	for (count = 2; count < 54; count++)
 	{
 		l[count] = l[(count - 1)] + l[(count - 2)];
 		printf("%d", l[count]);
