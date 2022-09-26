@@ -7,22 +7,24 @@
  */
 int main(void)
 {
-	long int i, j, count, sum;
+	unsigned long i, j, count, sum;
 
 	sum = 0;
 	i = 0;
 	j = 1;
 	while (1)
 	{
+		sum = i + j;
 		if (sum < 4000000)
 		{
-			sum = i + j;
 			if ((sum % 2) == 0)
 				count += sum;
 		}
 		else
 			break;
+		i = j;
+		j = sum;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", count);
 	return (0);
 }
