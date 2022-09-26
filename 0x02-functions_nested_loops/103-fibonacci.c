@@ -11,8 +11,8 @@ int main(void)
 
 	sum = 0;
 	limit = 4000000;
-	i = 1;
-	j = 2;
+	i = 0;
+	j = 1;
 	while (1)
 	{
 		sum = i + j;
@@ -23,6 +23,6 @@ int main(void)
 		i = j;
 		j = sum;
 	}
-	printf("%ld\n", count);
+	printf("%ld\n", sum);
 	return (0);
 }
