@@ -7,8 +7,9 @@
  */
 int main(void)
 {
-	long int i[100], count;
+	long int i[100], count, sum;
 
+	sum = 0;
 	for (count = 0; count <= 100; count++)
 	{
 		i[0] = 1;
