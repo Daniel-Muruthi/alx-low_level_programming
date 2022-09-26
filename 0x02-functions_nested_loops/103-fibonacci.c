@@ -7,25 +7,21 @@
  */
 int main(void)
 {
-	long int i[50], j, count, sum;
+	long int i[50], j, limit, count, sum;
 
 	sum = 0;
+	limit = 4000000;
 	i[0] = 1;
 	i[1] = 2;
 	for (count = 2; count <= 50; count++)
 	{
 		i[count] = i[(count - 1)] + i[(count + 2)];
-		for (j = 0; j <= 50; j++)
+		if (i[count] % 2 == 0)
 		{
-			if (i[j] % 2 == 0)
-			{
-				sum = sum + i[j];
-				if (i[j] > 4000000)
-				{
-					break;
-				}
-				printf("%ld", sum);
-			}
+			sum = sum + i[count];
+			if (i[count] > limit)
+				continue;
+			printf("%ld", sum);
 		}
 	}
 	printf("\n");
