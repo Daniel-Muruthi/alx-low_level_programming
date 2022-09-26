@@ -15,13 +15,12 @@ int main(void)
 	for (count = 2; count <= 50; count++)
 	{
 		i[count] = i[(count - 1)] + i[(count + 2)];
-		if (i[count] <= 4000000 && i[count] % 2 == 0)
+		if (i[count] % 2 == 0)
 		{
 			sum = sum + i[count];
 			if (i[count] > 4000000)
 			{
 				printf("%ld", sum);
-				break;
 			}
 		}
 		else
