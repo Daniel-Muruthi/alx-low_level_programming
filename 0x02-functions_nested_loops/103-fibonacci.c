@@ -19,11 +19,12 @@ int main(void)
 		if (i[count] % 2 == 0)
 		{
 			sum = sum + i[count];
-			if (count > 33)
+			if (i[count] > limit)
 			{
-				printf("%ld", sum);
 				break;
 			}
+			else
+				printf("%ld", sum);
 		}
 	}
 	printf("\n");
