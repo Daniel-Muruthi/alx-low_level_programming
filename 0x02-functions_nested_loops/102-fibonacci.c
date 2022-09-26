@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int l[50], count;
+	int count;
+	long int l[50];
 
 	l[0] = 1;
 	l[1] = 2;
