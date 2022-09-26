@@ -7,18 +7,19 @@
  */
 int main(void)
 {
-	int i, j, k, sum, count;
+	int i, j, k, l[50], sum, count;
 
+	i = 1;
+	j = 2;
+	l[0] = i;
+	l[1] = j;
+	printf("%d, %d, ", l[0], l[1]);
 	for (count = 0; count <= 50; count++)
 	{
-		i = 1;
-		j = 2;
-		sum = 0;
 		while (count <= 50)
 		{
-			k = i + j;
-			sum = sum + k;
-			printf("%d, %d, %d", i, j, sum);
+			l[count] = l[(count - 1)] + l[(count - 2)];
+			printf("%d", l[count]);
 			if (count == 50)
 				continue;
 			printf(", ");
