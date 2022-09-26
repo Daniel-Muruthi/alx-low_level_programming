@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	unsigned long i, j, count, sum;
+	unsigned long i, j, sum;
+	float count;
 
 	sum = 0;
 	i = 0;
@@ -25,6 +26,6 @@ int main(void)
 		i = j;
 		j = sum;
 	}
-	printf("%ld\n", count);
+	printf("%.0f\n", count);
 	return (0);
 }
