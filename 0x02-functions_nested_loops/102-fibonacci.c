@@ -16,12 +16,11 @@ int main(void)
 		while (count > 1 && count <= 50)
 		{
 			i[count] = i[(count - 2)] + i[(count - 1)];
-			if (count == 50)
-			{
-				printf("%d, ", i[0], i[1]);
-				printf("%d,", i[count]);
-			}
 		}
+		printf("%d", i[count]);
+		if (count == 50)
+			continue;
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
