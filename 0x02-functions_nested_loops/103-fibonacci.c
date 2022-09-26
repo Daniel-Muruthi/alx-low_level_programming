@@ -11,9 +11,8 @@ int main(void)
 
 	sum = 0;
 	limit = 4000000;
-	i = 0;
-	j = 1;
-	count = 0;
+	i = 1;
+	j = 2;
 	while (1)
 	{
 		sum = i + j;
