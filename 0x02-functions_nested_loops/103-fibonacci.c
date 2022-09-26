@@ -10,17 +10,18 @@ int main(void)
 	long int i[50], count, sum;
 
 	sum = 0;
+	i[0] = 1;
+	i[1] = 2;
 	for (count = 2; count <= 50; count++)
 	{
-		i[0] = 1;
-		i[1] = 2;
-		if (i[count] <= 4000000)
+		i[count] = i[(count - 1)] + i[(count + 2)];
+		if (i[count] <= 4000000 && i[count] % 2 == 0)
 		{
-			i[count] = i[(count - 1)] + i[(count + 2)];
-			if (i[count] % 2 == 0)
+			sum = sum + i[count];
+			if (i[count) > 4000000)
 			{
-				sum = sum + i[count];
 				printf("%ld", sum);
+				break;
 			}
 		}
 		else
