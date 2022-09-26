@@ -20,7 +20,7 @@ int main(void)
 			sum = sum + i[count];
 			if (i[count] == 4000000)
 			{
-				printf("%d", sum);
+				printf("%ld", sum);
 				break;
 			}
 			printf(", ");
