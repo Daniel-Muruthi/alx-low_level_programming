@@ -7,22 +7,24 @@
  */
 int main(void)
 {
-	long int i[100], count, sum;
+	long int i[50], count, sum;
 
 	sum = 0;
-	for (count = 0; count <= 100; count++)
+	for (count = 2; count <= 50; count++)
 	{
-		if (i[count] <= 4000000 && i[count] % 2 == 0)
+		i[0] = 1;
+		i[1] = 2;
+		if (i[count] <= 4000000)
 		{
-			i[0] = 1;
-			i[1] = 2;
 			i[count] = i[(count - 1)] + i[(count + 2)];
-			sum = sum + i[count];
-			if (i[count] == 4000000)
+			if (i[count] % 2 == 0)
 			{
+				sum = sum + i[count];
 				printf("%ld", sum);
 			}
 		}
+		else
+			break;
 	}
 	printf("\n");
 	return (0);
