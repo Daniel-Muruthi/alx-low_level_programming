@@ -19,7 +19,7 @@ int main(void)
 		sum = i + j;
 		if (sum > limit)
 			break;
-		if ((sum % 2) == 0)
+		if ((sum % 2) == 0 && sum < limit)
 			count = count + sum;
 		i = j;
 		j = sum;
