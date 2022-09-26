@@ -16,11 +16,11 @@ int main(void)
 	printf("%d, %d, ", l[0], l[1]);
 	for (count = 0; count <= 50; count++)
 	{
-		while (count <= 50)
+		while (count < 50)
 		{
 			l[count] = l[(count - 1)] + l[(count - 2)];
 			printf("%d", l[count]);
-			if (count == 50)
+			if (count == 49)
 				continue;
 			printf(", ");
 			count++;
