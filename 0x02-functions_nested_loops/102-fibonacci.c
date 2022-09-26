@@ -7,20 +7,22 @@
  */
 int main(void)
 {
-	int i[50], count;
+	int i, j, k, sum, count;
 
 	for (count = 0; count <= 50; count++)
 	{
-		i[0] = 1;
-		i[1] = 2;
+		i = 1;
+		j = 2;
+		sum = 0;
 		while (count > 1 && count <= 50)
 		{
-			i[count] = i[(count - 2)] + i[(count - 1)];
+			k = i + j;
+			sum = sum + k;
 		}
-		printf("%d", i[count]);
+		printf("%d", sum);
 		if (count == 50)
 			continue;
-		printf(", ");
+		printf(", ")i
 	}
 	printf("\n");
 	return (0);
