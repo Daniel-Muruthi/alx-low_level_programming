@@ -20,8 +20,10 @@ int main(void)
 		{
 			sum = sum + i[count];
 			if (i[count] > limit)
-				continue;
-			printf("%ld", sum);
+			{
+				printf("%ld", sum);
+				break;
+			}
 		}
 	}
 	printf("\n");
