@@ -22,8 +22,6 @@ int main(void)
 		}
 		else
 			break;
-		i = j;
-		j = count;
 	}
 	printf("%ld\n", sum);
 	return (0);
