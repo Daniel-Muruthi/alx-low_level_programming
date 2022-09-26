@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, j, k, l[50], sum, count;
+	int i, j, l[50], count;
 
 	i = 1;
 	j = 2;
