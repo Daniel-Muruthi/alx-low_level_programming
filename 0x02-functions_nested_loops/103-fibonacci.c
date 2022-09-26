@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	long int i[50], j, limit, count, sum;
+	long int i[50], limit, count, sum;
 
 	sum = 0;
 	limit = 4000000;
 	i[0] = 1;
 	i[1] = 2;
-	for (count = 2; count <= 50; count++)
+	for (count = 2; count < 50; count++)
 	{
 		i[count] = i[(count - 1)] + i[(count + 2)];
 		if (i[count] % 2 == 0)
