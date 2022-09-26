@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i[50], count, sum;
+	long int i[50], j, count, sum;
 
 	sum = 0;
 	i[0] = 1;
@@ -15,16 +15,18 @@ int main(void)
 	for (count = 2; count <= 50; count++)
 	{
 		i[count] = i[(count - 1)] + i[(count + 2)];
-		if (i[count] % 2 == 0)
+		for (j = 0; j <= 50; j++)
 		{
-			sum = sum + i[count];
-			if (i[count] > 4000000)
+			if (i[j] % 2 == 0)
 			{
-				printf("%ld", sum);
+				sum = sum + i[j];
+				if (i[j] > 4000000)
+				{
+					printf("%ld", sum);
+					break;
+				}
 			}
 		}
-		else
-			break;
 	}
 	printf("\n");
 	return (0);
