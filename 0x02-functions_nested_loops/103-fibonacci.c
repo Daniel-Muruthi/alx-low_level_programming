@@ -18,8 +18,6 @@ int main(void)
 		sum = i + j;
 		if ((sum % 2) == 0 && sum < limit)
 			count = count + sum;
-		else if (sum > limit)
-			break;
 		i = j;
 		j = sum;
 	}
