@@ -12,18 +12,16 @@ int main(void)
 	sum = 0;
 	for (count = 0; count <= 100; count++)
 	{
-		i[0] = 1;
-		i[1] = 2;
-		i[count] = i[(count - 1)] + i[(count + 2)];
 		if (i[count] <= 4000000 && i[count] % 2 == 0)
 		{
+			i[0] = 1;
+			i[1] = 2;
+			i[count] = i[(count - 1)] + i[(count + 2)];
 			sum = sum + i[count];
 			if (i[count] == 4000000)
 			{
 				printf("%ld", sum);
-				break;
 			}
-			printf(", ");
 		}
 	}
 	printf("\n");
