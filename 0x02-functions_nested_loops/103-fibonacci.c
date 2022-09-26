@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	long int i[50], limit, count, sum;
+	long int i[33], limit, count, sum;
 
 	sum = 0;
 	limit = 4000000;
 	i[0] = 1;
 	i[1] = 2;
-	for (count = 2; count < 50; count++)
+	for (count = 2; count < 34; count++)
 	{
 		i[count] = i[(count - 1)] + i[(count + 2)];
 		if (i[count] % 2 == 0)
 		{
 			sum = sum + i[count];
-			if (i[count] > limit)
+			if (count > 33)
 			{
 				printf("%ld", sum);
 				break;
