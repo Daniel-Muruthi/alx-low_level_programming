@@ -16,10 +16,10 @@ int main(void)
 	while (1)
 	{
 		sum = i + j;
-		if (sum > limit)
-			break;
-		if ((sum % 2) == 0)
+		if ((sum % 2) == 0 && sum < limit)
 			count = count + sum;
+		else if (sum > limit)
+			break;
 		i = j;
 		j = sum;
 	}
