@@ -17,7 +17,7 @@ int main(void)
 		sum = i + j;
 		if (sum > 4000000)
 			break;
-		if ((sum % 2) == 0 && sum < limit)
+		if ((sum % 2) == 0)
 			count = count + sum;
 		i = j;
 		j = sum;
