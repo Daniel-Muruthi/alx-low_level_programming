@@ -23,6 +23,7 @@ int main(void)
 			if (count == 50)
 				continue;
 			printf(", ");
+			count++;
 		}
 	}
 	printf("\n");
