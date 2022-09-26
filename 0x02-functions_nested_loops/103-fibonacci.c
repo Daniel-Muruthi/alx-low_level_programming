@@ -14,11 +14,14 @@ int main(void)
 	j = 1;
 	while (1)
 	{
-		sum = i + j;
-		if (sum > 4000000)
+		if (sum < 4000000)
+		{
+			sum = i + j;
+			if ((sum % 2) == 0)
+				count += sum;
+		}
+		else
 			break;
-		if ((sum % 2) == 0)
-			count += sum;
 		i = j;
 		j = sum;
 	}
