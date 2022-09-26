@@ -25,6 +25,6 @@ int main(void)
 		i = j;
 		j = count;
 	}
-	printf("%ld\n", count);
+	printf("%ld\n", sum);
 	return (0);
 }
