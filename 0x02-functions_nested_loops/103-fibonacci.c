@@ -20,7 +20,7 @@ int main(void)
 			if (i[j] % 2 == 0)
 			{
 				sum = sum + i[j];
-				if (i[j] > 4000000)
+				if (i[j] !< 4000000)
 				{
 					printf("%ld", sum);
 					break;
