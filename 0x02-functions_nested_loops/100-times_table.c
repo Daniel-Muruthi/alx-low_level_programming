@@ -40,7 +40,7 @@ void print_times_table(int n)
 						{
 							printf("%d", product);
 							printf(", ");
-							if (j < (n - 1) && product == 90)
+							if (j == (n - 3) && product == 90)
 								printf(" ");
 
 						}
@@ -48,7 +48,7 @@ void print_times_table(int n)
 						{
 						        printf("%d", product);
 						        printf(",  ");
-							if (j < (n - 1) && product == 90)
+							if (j == (n - 3) && product == 90)
 								printf(" ");
 						}
 					}
