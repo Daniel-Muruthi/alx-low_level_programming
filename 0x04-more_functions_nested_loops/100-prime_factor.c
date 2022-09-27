@@ -18,7 +18,7 @@ int main(void)
 		{
 			while (number % j == 0)
 			{
-				number /= j;
+				number = number/j;
 			}
 			i = j;
 		}
