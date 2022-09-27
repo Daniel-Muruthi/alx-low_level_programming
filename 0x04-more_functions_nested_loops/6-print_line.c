@@ -2,6 +2,7 @@
 /**
  * print_line - Entry point
  * Description - Draws straight line in the terminal
+ * @n: number of times underscore should be printed
  */
 void print_line(int n)
 {
