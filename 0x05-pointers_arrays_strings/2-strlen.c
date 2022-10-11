@@ -4,6 +4,7 @@
  * _strlen - Entry point
  * Description - Returns the length of a string
  * @s: string element
+ * Return: Length of the string
  */
 int _strlen(char *s)
 {
