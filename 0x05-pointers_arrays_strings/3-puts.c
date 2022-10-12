@@ -7,8 +7,11 @@
  */
 void _puts(char *str)
 {
-	char c;
+	int i = 0;
 
-	*str = c;
-	puts(c);
+	while (*str != "/0")
+	{
+		i++;
+	}
+	puts(i);
 }
