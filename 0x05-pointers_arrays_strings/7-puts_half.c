@@ -18,7 +18,7 @@ void puts_half(char *str)
 	}
 	if (k % 2 == 0)
 	{
-		for (i = (k/2); i < k; i++)
+		for (i = (k / 2); i < k; i++)
 		{
 			printf("%c", str[i]);
 		}
@@ -26,7 +26,7 @@ void puts_half(char *str)
 	}
 	if (k % 2 != 0)
 	{
-		for (i = (k + 1)/2; i <= (k - 1); i++)
+		for (i = (k + 1) / 2; i <= (k - 1); i++)
 		{
 			printf("%c", str[i]);
 		}
