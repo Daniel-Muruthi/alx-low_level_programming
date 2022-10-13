@@ -5,13 +5,12 @@
  * _atoi - Entry Point
  * Description - converts string into an integer
  * @s: string
- * Return: Always (0) Success
+ * Return: A Number
  */
 int _atoi(char *s)
 {
 	int i;
 
 	i = atoi(s);
-	printf("%d\n", i);
-	return (0);
+	return (printf("%d\n", i));
 }
