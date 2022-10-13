@@ -12,15 +12,16 @@ void rev_string(char *s)
 	int i = 0;
 	int k = 0;
 	long unsigned int j;
+	char c;
 
 	for (j = 0; j <= (strlen(s) - 1); j++)
 	{
 		k = k + 1;
 	}
-	for (i = k; i >= 0; i--)
+	for (i = k - 1; i >= k / 2; i--)
 	{
-		printf("%c", s[i]);
-		if (i == 0)
-			break;
+		c = s[i];
+		s[i] = s[k - i - 1];
+		s[k -i - 1] = c;
 	}
 }
