@@ -20,5 +20,7 @@ void rev_string(char *s)
 	for (i = k; i >= 0; i--)
 	{
 		printf("%c", s[i]);
+		if (i == 0)
+			break;
 	}
 }
