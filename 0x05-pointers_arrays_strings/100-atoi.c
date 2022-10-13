@@ -19,10 +19,7 @@ int _atoi(char *s)
 		{
 			i *= -1;
 		}
-		else if (s[j] >= '0' && s[j] <= '9')
-			num = (num * 10) + (s[j] - '0');
-		else if (num > 0)
-			break;
 	}
+	num = atoi(s);
 	return (num * i);
 }
