@@ -18,6 +18,7 @@ int _atoi(char *s)
 		if (s[j] == '-')
 		{
 			i *= -1;
+			printf("-");
 		}
 	}
 	num = atoi(s);
