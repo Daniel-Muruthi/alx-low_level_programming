@@ -11,10 +11,10 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int k = 0;
-	unsigned long int j;
+	int j = 0;
 	char c;
 
-	for (j = 0; j <= strlen(s); j++)
+	while (j++)
 	{
 		k = k + 1;
 	}
