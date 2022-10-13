@@ -10,15 +10,17 @@
 int _atoi(char *s)
 {
 	int i = 1;
-	int j;
+	int k = 0;
+	unsigned long int j;
 	unsigned int num;
 
 	for (j = 0; j < (strlen(s)); j++)
 	{
-		if (s[j] == '-')
+		if (s[k] == '-')
 		{
 			i *= -1;
 		}
+		k++;
 	}
 	num = atoi(s);
 	return (num * i);
