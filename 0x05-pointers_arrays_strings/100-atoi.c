@@ -9,5 +9,5 @@
  */
 int _atoi(char *s)
 {
-	return (atoi(s));
+	return (printf("%ld\n", atoi(s)));
 }
