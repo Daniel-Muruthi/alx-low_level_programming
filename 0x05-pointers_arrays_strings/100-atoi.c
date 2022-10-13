@@ -15,16 +15,15 @@ int _atoi(char *s)
 
 	for (j = 0; j < (strlen(s)); j++)
 	{
-		if (s[j] == '-')
+		if (*s == '-')
 		{
 			i *= -1;
 		}
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+
 	}
-	num = atoi(s);
-	if (i == -1)
-	{
-		return (printf("-%d\n", num));
-	}
-	else
-		return (printf("%d\n", num));
+	return (num * i);
 }
