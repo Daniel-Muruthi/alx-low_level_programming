@@ -2,7 +2,9 @@
 #include <string.h>
 #include "main.h"
 /**
- *
+ * puts_half - Entry Point
+ * Description - Prints half of string line followed by a new line
+ * @str: string
  */
 void puts_half(char *str)
 {
