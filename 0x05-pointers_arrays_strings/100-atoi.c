@@ -9,5 +9,10 @@
  */
 int _atoi(char *s)
 {
-	return (printf("%d\n", atoi(s)));
+	int i = atoi(s);
+
+	if (s == "-")
+		return ((-1 * i));
+	else
+		return (i);
 }
