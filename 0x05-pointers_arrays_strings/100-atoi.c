@@ -21,5 +21,10 @@ int _atoi(char *s)
 		}
 	}
 	num = atoi(s);
-	return (num * i);
+	if (i = -1)
+	{
+		return (printf("-%d\n", num));
+	}
+	else
+		return (printf("%d\n", num));
 }
