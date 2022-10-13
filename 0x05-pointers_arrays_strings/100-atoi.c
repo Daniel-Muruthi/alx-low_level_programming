@@ -13,9 +13,9 @@ int _atoi(char *s)
 	int j;
 	unsigned int num;
 
-	for (j = 0; j < strlen(s); j++)
+	for (j = 0; j < (strlen(s)); j++)
 	{
-		if (s[j] == "-")
+		if (s[j] == '-')
 		{
 			i *= -1;
 		}
