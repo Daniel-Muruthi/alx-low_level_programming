@@ -16,11 +16,10 @@ int _atoi(char *s)
 
 	for (j = 0; j < (strlen(s)); j++)
 	{
-		if (s[k] == '-')
+		if (s[j] == '-')
 		{
 			i *= -1;
 		}
-		k++;
 	}
 	num = atoi(s);
 	return (num * i);
