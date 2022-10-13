@@ -14,7 +14,7 @@ void rev_string(char *s)
 	int j = 0;
 	char c;
 
-	while (j++)
+	while (s[j++])
 	{
 		k = k + 1;
 	}
