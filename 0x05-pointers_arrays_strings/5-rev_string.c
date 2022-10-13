@@ -9,16 +9,16 @@
  */
 void rev_string(char *s)
 {
-	int i = 0; j, k = 0;
-	char c;
+	int i = 0;
+	int k = 0;
+	int j;
 
-	s = c;
 	for (j = 0; j <= (strlen(s) - 1); j++)
 	{
 		k = k + 1;
 	}
 	for (i = k; i >= 0; i--)
 	{
-		printf("%c", c[i]);
+		printf("%c", s[i]);
 	}
 }
