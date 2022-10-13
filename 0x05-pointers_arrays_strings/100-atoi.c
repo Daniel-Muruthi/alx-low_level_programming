@@ -20,10 +20,12 @@ int _atoi(char *s)
 			i *= -1;
 		}
 		else if (*s >= '0' && *s <= '9')
-			num = (num * 10) + (*s - '0');
+			num = atoi(*s);
 		else if (num > 0)
 			break;
 
 	}
+	if (i == -1)
+		putchar('-');
 	return (num * i);
 }
