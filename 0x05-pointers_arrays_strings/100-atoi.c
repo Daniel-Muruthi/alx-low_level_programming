@@ -18,9 +18,11 @@ int _atoi(char *s)
 		if (s[j] == '-')
 		{
 			i *= -1;
-			printf("-");
 		}
+		else if (s[j] >= '0' && s[j] <= '9')
+			num = (num * 10) + (s[j] - '0');
+		else if (num > 0)
+			break;
 	}
-	num = atoi(s);
 	return (num * i);
 }
